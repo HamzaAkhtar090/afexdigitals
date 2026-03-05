@@ -1,0 +1,46 @@
+@media (max-width: 767px) {
+  .nav__menu { display: none; }
+  .nav__toggle { display: flex; }
+  .hero { min-height: 85vh; }
+  .hero__orb--1 { width: 250px; height: 250px; }
+  .hero__orb--2 { width: 180px; height: 180px; }
+  .hero__orb--3 { display: none; }
+  .services__grid { grid-template-columns: 1fr; }
+  .about__grid { grid-template-columns: 1fr; gap: var(--space-8); }
+  .about__visual { order: -1; }
+  .features__grid { grid-template-columns: 1fr; }
+  .work__grid { grid-template-columns: 1fr; }
+  .process__timeline { grid-template-columns: 1fr; gap: var(--space-3); }
+  .stats__grid { grid-template-columns: repeat(2, 1fr); gap: var(--space-3); }
+  .stats__item { padding: var(--space-4) 0; }
+  .team__grid { grid-template-columns: repeat(2, 1fr); gap: var(--space-3); }
+  .team__card { padding: var(--space-4); }
+  .team__avatar { width: 52px; height: 52px; font-size: 0.75rem; }
+  .testimonials__track { min-height: 280px; }
+  .faq__grid { grid-template-columns: 1fr; }
+  .footer__grid { grid-template-columns: 1fr; gap: var(--space-6); }
+  .footer__bottom { flex-direction: column; gap: var(--space-2); }
+  .cta { padding: var(--space-10) 0; }
+  .cta .btn-primary--large { padding: 0.75rem 1.5rem; font-size: var(--text-small); }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .nav__menu { display: none; }
+  .nav__toggle { display: flex; }
+  .services__grid { grid-template-columns: repeat(2, 1fr); }
+  .about__grid { grid-template-columns: 1fr; gap: var(--space-8); }
+  .features__grid { grid-template-columns: repeat(2, 1fr); }
+  .process__timeline { grid-template-columns: repeat(2, 1fr); }
+  .team__grid { grid-template-columns: repeat(2, 1fr); }
+  .faq__grid { grid-template-columns: 1fr; }
+  .footer__grid { grid-template-columns: 1fr 1fr 1fr; gap: var(--space-6); }
+}
+
+@media (min-width: 1440px) {
+  .container { padding: 0 var(--space-10); }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .card { border-color: var(--border-default); }
+  .hero__orb { animation-play-state: paused; }
+}
