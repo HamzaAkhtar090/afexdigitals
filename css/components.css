@@ -272,6 +272,7 @@
   gap: var(--space-10);
   margin-bottom: var(--space-8);
 }
+.footer__grid--4col { grid-template-columns: 1.6fr 1fr 1fr 1.3fr; }
 .footer .nav__logo-bold { color: var(--text-on-dark); }
 .footer .nav__logo-light { color: var(--text-on-dark-secondary); }
 .footer__tagline {
@@ -310,6 +311,8 @@
 .footer__list { display: flex; flex-direction: column; gap: var(--space-2); }
 .footer__link { color: rgba(255,255,255,0.75); font-size: var(--text-small); transition: color var(--duration-fast); }
 .footer__link:hover { color: #fff; }
+.footer__contact-name { color: #fff; font-family: var(--font-display); font-weight: 600; font-size: var(--text-small); }
+.footer__address { color: rgba(255,255,255,0.55); font-size: 0.75rem; line-height: 1.5; }
 .footer__bottom {
   border-top: 1px solid rgba(255,255,255,0.08);
   padding-top: var(--space-6);

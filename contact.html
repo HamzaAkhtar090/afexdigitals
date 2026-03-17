@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About & Contact — Afex Digitals</title>
+  <meta name="description" content="Get in touch with Afex Digitals. Contact Khalid Rasheed for mobile app development, AI agents, and digital services.">
+  <link rel="canonical" href="https://afexdigitals.com/contact.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <style>
+    .contact-page {
+      padding: calc(var(--nav-height) + var(--space-12)) 0 var(--space-16);
+    }
+    .contact-page__back {
+      display: inline-flex; align-items: center; gap: var(--space-2);
+      font-size: var(--text-small); color: var(--accent-primary); font-weight: 500;
+      margin-bottom: var(--space-8); transition: gap var(--duration-fast); text-decoration: none;
+    }
+    .contact-page__back:hover { gap: var(--space-3); }
+
+    .contact-page__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-12);
+      align-items: start;
+    }
+
+    /* About Me section */
+    .about-me { }
+    .about-me__label {
+      font-family: var(--font-mono); font-size: var(--text-label);
+      text-transform: uppercase; letter-spacing: var(--tracking-wide);
+      color: var(--accent-primary); font-weight: 500;
+      display: inline-flex; align-items: center; gap: var(--space-2);
+    }
+    .about-me__label::before {
+      content: ''; width: 8px; height: 8px; border-radius: 50%;
+      background: var(--accent-primary); display: inline-block;
+    }
+    .about-me h2 {
+      font-size: var(--text-display); font-weight: 700;
+      letter-spacing: var(--tracking-tight); margin-top: var(--space-3); margin-bottom: var(--space-5);
+      line-height: var(--leading-snug);
+    }
+    .about-me__name {
+      font-family: var(--font-display); font-size: var(--text-h3);
+      font-weight: 600; color: var(--text-primary); margin-bottom: var(--space-2);
+    }
+    .about-me__role {
+      font-family: var(--font-mono); font-size: var(--text-label);
+      color: var(--accent-primary); text-transform: uppercase;
+      letter-spacing: var(--tracking-wide); margin-bottom: var(--space-5);
+    }
+    .about-me p {
+      font-size: var(--text-small); line-height: 1.7; color: var(--text-secondary);
+      margin-bottom: var(--space-4);
+    }
+
+    /* Contact section */
+    .contact-info { }
+    .contact-info__label {
+      font-family: var(--font-mono); font-size: var(--text-label);
+      text-transform: uppercase; letter-spacing: var(--tracking-wide);
+      color: var(--accent-primary); font-weight: 500;
+      display: inline-flex; align-items: center; gap: var(--space-2);
+    }
+    .contact-info__label::before {
+      content: ''; width: 8px; height: 8px; border-radius: 50%;
+      background: var(--accent-primary); display: inline-block;
+    }
+    .contact-info h2 {
+      font-size: var(--text-display); font-weight: 700;
+      letter-spacing: var(--tracking-tight); margin-top: var(--space-3); margin-bottom: var(--space-8);
+      line-height: var(--leading-snug);
+    }
+
+    .contact-info__items {
+      display: flex; flex-direction: column; gap: var(--space-6);
+    }
+    .contact-info__item {
+      display: flex; gap: var(--space-4); align-items: flex-start;
+    }
+    .contact-info__icon {
+      width: 44px; height: 44px; flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+      border-radius: var(--radius-md);
+      background: rgba(99,102,241,0.06); color: var(--accent-primary);
+    }
+    .contact-info__item-label {
+      font-family: var(--font-display); font-size: var(--text-small);
+      font-weight: 600; color: var(--text-primary); margin-bottom: 2px;
+    }
+    .contact-info__item-value {
+      font-size: var(--text-small); color: var(--text-secondary); line-height: 1.5;
+    }
+    .contact-info__item-value a {
+      color: var(--accent-primary); text-decoration: none;
+      transition: color var(--duration-fast);
+    }
+    .contact-info__item-value a:hover { color: var(--accent-secondary); }
+
+    .contact-info__cta {
+      margin-top: var(--space-8);
+      padding-top: var(--space-6);
+      border-top: 1px solid var(--border-subtle);
+    }
+    .contact-info__cta p {
+      font-size: var(--text-small); color: var(--text-tertiary); margin-bottom: var(--space-4);
+    }
+
+    @media (max-width: 767px) {
+      .contact-page__grid { grid-template-columns: 1fr; gap: var(--space-8); }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="nav nav--scrolled" id="nav">
+    <div class="nav__container container">
+      <a href="index.html" class="nav__logo" aria-label="Afex Digitals Home">
+        <span class="nav__logo-bold">AFEX</span><span class="nav__logo-light">DIGITALS</span>
+      </a>
+      <nav class="nav__menu" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li><a href="index.html#services" class="nav__link">Services</a></li>
+          <li><a href="index.html#about" class="nav__link">About</a></li>
+          <li><a href="index.html#work" class="nav__link">Work</a></li>
+          <li><a href="index.html#process" class="nav__link">Process</a></li>
+          <li><a href="mailto:m.ahmadkhalid2942@gmail.com" class="nav__link nav__link--cta">Get in Touch</a></li>
+        </ul>
+      </nav>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <nav class="mobile-menu__nav" aria-label="Mobile navigation">
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item"><a href="index.html#services" class="mobile-menu__link">Services</a></li>
+        <li class="mobile-menu__item"><a href="index.html#about" class="mobile-menu__link">About</a></li>
+        <li class="mobile-menu__item"><a href="index.html#work" class="mobile-menu__link">Work</a></li>
+        <li class="mobile-menu__item"><a href="index.html#process" class="mobile-menu__link">Process</a></li>
+        <li class="mobile-menu__item"><a href="mailto:m.ahmadkhalid2942@gmail.com" class="mobile-menu__link">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main id="main-content">
+    <section class="contact-page">
+      <div class="container">
+        <a href="index.html" class="contact-page__back">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          Back to Home
+        </a>
+
+        <div class="contact-page__grid">
+          <!-- About Me -->
+          <div class="about-me">
+            <span class="about-me__label">About</span>
+            <h2>About <span class="text-gradient">the Founder</span></h2>
+            <p class="about-me__name">Khalid Rasheed</p>
+            <p class="about-me__role">Founder & Digital Services Lead</p>
+            <p>I am involved in digital services, including developing and selling mobile applications and related digital assets.</p>
+            <p>This website represents my digital business activities, including mobile application development and sales. At Afex Digitals, we are committed to delivering high-quality software solutions — from custom mobile apps and AI-powered automation to full-scale web platforms — built with engineering excellence and a focus on measurable business outcomes.</p>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="contact-info">
+            <span class="contact-info__label">Get in Touch</span>
+            <h2>Contact <span class="text-gradient--warm">Us</span></h2>
+
+            <div class="contact-info__items">
+              <div class="contact-info__item">
+                <div class="contact-info__icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                </div>
+                <div>
+                  <p class="contact-info__item-label">Name</p>
+                  <p class="contact-info__item-value">Khalid Rasheed</p>
+                </div>
+              </div>
+              <div class="contact-info__item">
+                <div class="contact-info__icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div>
+                  <p class="contact-info__item-label">Email</p>
+                  <p class="contact-info__item-value"><a href="mailto:m.ahmadkhalid2942@gmail.com">m.ahmadkhalid2942@gmail.com</a></p>
+                </div>
+              </div>
+              <div class="contact-info__item">
+                <div class="contact-info__icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                </div>
+                <div>
+                  <p class="contact-info__item-label">Phone</p>
+                  <p class="contact-info__item-value"><a href="tel:+923084087459">+92 308 4087459</a></p>
+                </div>
+              </div>
+              <div class="contact-info__item">
+                <div class="contact-info__icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                  <p class="contact-info__item-label">Address</p>
+                  <p class="contact-info__item-value">WAPDA Office of GM Planning Power House,<br>Ex Sales WAPDA House, Lahore, Pakistan</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-info__cta">
+              <p>Have a project in mind? We'd love to hear from you.</p>
+              <a href="mailto:m.ahmadkhalid2942@gmail.com" class="btn btn-primary">Send an Email &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid footer__grid--4col">
+        <div class="footer__brand">
+          <a href="index.html" class="nav__logo" aria-label="Afex Digitals Home">
+            <span class="nav__logo-bold">AFEX</span><span class="nav__logo-light">DIGITALS</span>
+          </a>
+          <p class="footer__tagline">Engineering-first digital products for ambitious teams.</p>
+        </div>
+        <div class="footer__links">
+          <h4 class="footer__heading">Services</h4>
+          <ul class="footer__list">
+            <li><a href="index.html#services" class="footer__link">Mobile Apps</a></li>
+            <li><a href="index.html#services" class="footer__link">AI Agents</a></li>
+            <li><a href="index.html#services" class="footer__link">Web Development</a></li>
+            <li><a href="index.html#services" class="footer__link">Custom Software</a></li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <h4 class="footer__heading">Company</h4>
+          <ul class="footer__list">
+            <li><a href="index.html#about" class="footer__link">About</a></li>
+            <li><a href="index.html#process" class="footer__link">Process</a></li>
+            <li><a href="index.html#faq" class="footer__link">FAQ</a></li>
+            <li><a href="privacy.html" class="footer__link">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <h4 class="footer__heading">Contact</h4>
+          <ul class="footer__list">
+            <li class="footer__contact-name">Khalid Rasheed</li>
+            <li><a href="mailto:m.ahmadkhalid2942@gmail.com" class="footer__link">m.ahmadkhalid2942@gmail.com</a></li>
+            <li><a href="tel:+923084087459" class="footer__link">+92 308 4087459</a></li>
+            <li class="footer__address">WAPDA Office of GM Planning Power House, Ex Sales WAPDA House, Lahore, Pakistan</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Afex Digitals. All rights reserved.</p>
+        <a href="privacy.html" class="footer__link">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  (function() {
+    var toggle = document.getElementById('nav-toggle');
+    var mobileMenu = document.getElementById('mobile-menu');
+    var isOpen = false;
+    toggle.addEventListener('click', function() {
+      isOpen = !isOpen;
+      toggle.classList.toggle('nav__toggle--open', isOpen);
+      toggle.setAttribute('aria-expanded', isOpen);
+      mobileMenu.classList.toggle('mobile-menu--open', isOpen);
+      mobileMenu.setAttribute('aria-hidden', !isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+  })();
+  </script>
+</body>
+</html>
