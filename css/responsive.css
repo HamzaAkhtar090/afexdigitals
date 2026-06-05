@@ -15,9 +15,6 @@
   .process__timeline { grid-template-columns: 1fr; gap: var(--space-3); }
   .stats__grid { grid-template-columns: repeat(2, 1fr); gap: var(--space-4); }
   .stats__item { padding: var(--space-4) 0; }
-  .team__grid { grid-template-columns: repeat(2, 1fr); gap: var(--space-3); }
-  .team__card { padding: var(--space-6); }
-  .testimonials__track { min-height: 320px; }
   .faq__grid { grid-template-columns: 1fr; }
   .footer__grid, .footer__grid--4col { grid-template-columns: 1fr; gap: var(--space-6); }
   .footer__bottom { flex-direction: column; gap: var(--space-2); }
@@ -32,7 +29,6 @@
   .about__grid { grid-template-columns: 1fr; gap: var(--space-10); }
   .features__grid { grid-template-columns: repeat(2, 1fr); }
   .process__timeline { grid-template-columns: repeat(2, 1fr); }
-  .team__grid { grid-template-columns: repeat(2, 1fr); }
   .faq__grid { grid-template-columns: 1fr; }
   .footer__grid { grid-template-columns: 1fr 1fr 1fr; gap: var(--space-6); }
   .footer__grid--4col { grid-template-columns: repeat(2, 1fr); gap: var(--space-6); }
@@ -44,5 +40,5 @@
 
 @media (hover: none) and (pointer: coarse) {
   .card:hover, .services__card:hover, .work__card:hover,
-  .feature-card:hover, .process__step:hover, .team__card:hover { transform: none; }
+  .feature-card:hover, .process__step:hover { transform: none; }
 }
